@@ -45,3 +45,4 @@ input[type=time],input[type=number],input[type=date]{font:inherit;padding:6px;bo
 .list .amt{margin-left:auto;font-variant-numeric:tabular-nums;font-weight:700}
 .empty-msg{color:var(--sub);font-size:14px}
 input[type=checkbox]{width:18px;height:18px;accent-color:var(--acc)}
+select{font:inherit;padding:6px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
