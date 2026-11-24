@@ -1,4 +1,4 @@
-シフト給料カレンダー（HTML / CSS / JavaScript）
+chat-money（HTML / CSS / JavaScript）
 
 ファイル
   index.html            画面
