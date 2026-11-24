@@ -6,7 +6,8 @@
   app.js                動作（JavaScript）
   manifest.webmanifest  ホーム画面に追加するための設定（アプリ名・アイコン）
   sw.js                 オフライン用の設定（Service Worker）
-  icons/                お財布のアイコン画像
+  apple-touch-icon.png / icon-192.png / icon-512.png / icon-maskable-512.png / favicon-32.png
+                        お財布のアイコン画像（フォルダに入れず、同じ階層に置きます）
 
 そのまま開く場合
   index.html をブラウザで開くと使えます（ホーム画面への追加はできません）。
