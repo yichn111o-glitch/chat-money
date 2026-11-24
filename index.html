@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>給料カレンダー</title>
+<meta name="theme-color" content="#0f6b57">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="給料カレンダー">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>シフト給料カレンダー</h1>
+
+<section>
+  <div class="nav">
+    <button id="prev" aria-label="前の月">‹ 前月</button>
+    <b id="title"></b>
+    <button id="next" aria-label="次の月">次月 ›</button>
+  </div>
+  <div class="sum">
+    <div><small>今月の給料合計</small><strong id="tot">0円</strong></div>
+    <div class="got"><small>受け取り済み</small><strong id="got">0円</strong></div>
+    <div class="rem"><small>残り</small><strong id="rem">0円</strong></div>
+  </div>
+  <p class="note" id="sumnote"></p>
+  <div class="row" style="margin:8px 0 0"><button class="p" id="settle" hidden></button></div>
+</section>
+
+<section>
+  <div class="cal" id="cal"></div>
+  <p class="note">日付をタップしてシフトを入力します。「受取済」は給料をもらった日、「未受取」はまだの日です。</p>
+</section>
+
+<section id="editor"></section>
+
+<section>
+  <h2>給料を受け取る（まとめ受け取り）</h2>
+  <div id="pick"></div>
+</section>
+
+<section>
+  <h2>月末の受け取り（端数・交通費など）</h2>
+  <div id="eom"></div>
+</section>
+
+<section>
+  <h2>受け取り履歴</h2>
+  <div id="hist"></div>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
